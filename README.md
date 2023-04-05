@@ -1,5 +1,7 @@
 # Three-Stream I3D: ViT 기반의 Attention Stream을 활용한 Action Recognition 연구 
 
+[paper](https://drive.google.com/file/d/1HDMQKPyxtCoTORSzobIbkfRuf9h65va4/view)
+
 Action Recognition 이란 Video의 전체 프레임에서 서로 다른 동작을 구별해 내는 task이다. Action Recognition 연구에서는 Two-Stream I3D 모델이 베이스라인으로 사용되며, 이는 Inception V1의 2D ConvNet 이 3D ConvNet으로 전환된 구조이다. 서로 다른 두 가지 특징인 RGB와 Optical Flow를 개별적인 네트워크를 통해 학습을 진행하며, 두 Stream의 Class Score의 평균값을 사용한다. 본 연구에서는 최근 각광받고 있는 Vision Transformer를 기존의 Two-Stream I3D 모델에 적용한 Three-Stream I3D를 제안한다. Two Stream에 Attention Stream을 추가하여 Attention Value를 반영한다. 제안하는 방법론의 검증을 위해 UCF-101과 HMDB-51 데이 터셋을 통해 기존의 Two-Stream I3D와 비교 실험을 진행하였으며, 제안하는 방법론의 우수성을 검증하였다.
 
 ## Architecture
